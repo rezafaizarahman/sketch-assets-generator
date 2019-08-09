@@ -1,6 +1,6 @@
 os: osx
 language: node_js
-node_js: latest
+node_js: 10.16.2
 before_script:
   - npm install
 script:
