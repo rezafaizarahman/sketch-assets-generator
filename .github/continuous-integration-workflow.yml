@@ -1,0 +1,13 @@
+name: Build new icons
+# This workflow is triggered on pushes to the repository.
+on: [push]
+
+jobs:
+  build:
+    # Job name is Build
+    name: Build
+    # This job runs on macos
+    runs-on: macos-latest
+    steps:
+    # This step prints the time.
+    - run: npm install && npm run start
