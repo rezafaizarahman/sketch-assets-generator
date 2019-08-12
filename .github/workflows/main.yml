@@ -1,0 +1,14 @@
+name: Auto build assets
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: macOS-latest
+    
+    steps:
+    - name: build new assets
+      run: |
+        npm install
+        npm run start
